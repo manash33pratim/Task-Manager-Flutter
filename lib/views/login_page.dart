@@ -3,9 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager_list/views/register.dart';
 import 'package:task_manager_list/views/task_page.dart';
-//import 'package:task_manager/main.dart';
 
-//import 'package:task_manager/views/login_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

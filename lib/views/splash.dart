@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:task_manager_list/views/login_page.dart';
-import 'package:task_manager_list/views/task_page.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:task_manager_list/views/add_task_view.dart';
 import 'package:task_manager_list/views/header_view.dart';
 
@@ -14,21 +13,21 @@ class TaskPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backwardsCompatibility: false,
-          // backgroundColor:Colors.yellow),
+        automaticallyImplyLeading:false,
           title: Center(
+            
             
               child: Text('TASKY',
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.black))),
 
-          shape: RoundedRectangleBorder(
+         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.vertical(
               bottom: Radius.circular(40),
             ),
           ),
           backgroundColor: Color.fromARGB(255, 243, 233, 45),
-        ),
+         ),
         body: SafeArea(
           bottom: false,
           child: Column(
