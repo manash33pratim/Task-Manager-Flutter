@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:task_manager_list/views/register.dart';
 import 'package:task_manager_list/views/task_page.dart';
 //import 'package:task_manager/main.dart';
 
@@ -14,6 +15,9 @@ class LoginPage extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 244, 230, 31),
+        elevation: 0),
             resizeToAvoidBottomInset: false,
             // set it to false
             body: SafeArea(
@@ -33,7 +37,7 @@ class LoginPage extends StatelessWidget {
                         width: 200,
                         height: 150,
                         margin: EdgeInsets.fromLTRB(20, 40, 20, 20),
-                        //child: Image.asset("images/login.png"),
+                        child: Image.asset("assets/pkey.png"),
                       ),
                       Container(
                         margin: EdgeInsets.fromLTRB(20, 80, 20, 20),
@@ -130,7 +134,7 @@ class LoginPage extends StatelessWidget {
                               ))),
                       InkWell(
                           onTap:  () {
-                            Navigator.pushNamed(context, 'register');
+                                           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Register()));
                           },
                           child: Container(
                             margin: EdgeInsets.fromLTRB(20, 20, 20, 0),
@@ -139,7 +143,7 @@ class LoginPage extends StatelessWidget {
                           )),
                       InkWell(
                           onTap:  () {
-                            Navigator.pushNamed(context, 'register');
+                                           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>Register()));
                           },
                           child: Container(
                               width: 200,
@@ -155,4 +159,6 @@ class LoginPage extends StatelessWidget {
                               )))
                     ])))));
   }
+
+
 }

@@ -25,6 +25,9 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 244, 230, 31),
+        elevation: 0),
       body: SafeArea(
           child: Stack(
         children: [

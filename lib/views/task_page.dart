@@ -14,8 +14,10 @@ class TaskPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backwardsCompatibility: false,
           // backgroundColor:Colors.yellow),
           title: Center(
+            
               child: Text('TASKY',
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.black))),
