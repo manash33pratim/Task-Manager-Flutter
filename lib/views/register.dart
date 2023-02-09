@@ -8,8 +8,10 @@ class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
+          
         backgroundColor: Color.fromARGB(255, 244, 230, 31),
         elevation: 0),
           resizeToAvoidBottomInset: false, // set it to false
