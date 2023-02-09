@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "282439397096",
+    "project_id": "tasky-f93aa",
+    "storage_bucket": "tasky-f93aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282439397096:android:60b97a9a095a197902a35d",
+        "android_client_info": {
+          "package_name": "com.example.task_manager_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282439397096-rhb7m39tpaf3sarqhet9i64t512smsef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Rj0T97SGP2EfhHoZPvao_PUyfNBIopc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282439397096-rhb7m39tpaf3sarqhet9i64t512smsef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
