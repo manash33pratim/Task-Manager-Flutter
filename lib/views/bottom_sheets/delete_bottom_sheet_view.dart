@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:provider/provider.dart';
-import 'package:todo_list/view_models/app_view_model.dart';
+import 'package:task_manager_list/view_models/app_view_model.dart';
 
 class DeleteBottomSheetView extends StatelessWidget {
   const DeleteBottomSheetView({super.key});
