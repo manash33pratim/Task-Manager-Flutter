@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list/views/login_page.dart';
-import 'package:todo_list/views/task_page.dart';
+import 'package:task_manager_list/views/login_page.dart';
+import 'package:task_manager_list/views/task_page.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class _SplashState extends State<Splash> {
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 3500), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => LoginPage() ));
+        context, MaterialPageRoute(builder: (context) => LoginPage()));
   }
 
   @override
@@ -33,7 +33,7 @@ class _SplashState extends State<Splash> {
             width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
-                 Color.fromARGB(255, 244, 230, 31),
+                Color.fromARGB(255, 244, 230, 31),
                 Colors.white,
               ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
             ),

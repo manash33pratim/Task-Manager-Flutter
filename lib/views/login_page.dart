@@ -1,8 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:task_manager_list/views/task_page.dart';
 //import 'package:task_manager/main.dart';
-//import 'package:task_manager/views/task_page.dart';
+
 //import 'package:task_manager/views/login_page.dart';
 
 class LoginPage extends StatelessWidget {
@@ -112,8 +113,9 @@ class LoginPage extends StatelessWidget {
                         ),
                       ),
                       InkWell(
-                          onTap: () {
-                            Navigator.pushNamed(context, 'register');
+                         onTap: () {
+                                      Navigator.of(context).push(MaterialPageRoute(builder: (context)=>TaskPage()));
+
                           },
                           child: Container(
                               width: 100,
