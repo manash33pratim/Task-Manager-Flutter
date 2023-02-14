@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-//import 'package:flutter/src/widgets/container.dart';
-//import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:provider/provider.dart';
-import 'package:todo_list/view_models/app_view_model.dart';
-import 'package:todo_list/views/bottom_sheets/add_task_bottom_sheet_view.dart';
+import 'package:task_manager_list/view_models/app_view_model.dart';
+import 'package:task_manager_list/views/bottom_sheets/add_task_bottom_sheet_view.dart';
 
 class AddTaskView extends StatelessWidget {
   const AddTaskView({super.key});

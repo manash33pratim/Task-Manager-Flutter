@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:provider/provider.dart';
-import 'package:todo_list/view_models/app_view_model.dart';
+import 'package:task_manager_list/view_models/app_view_model.dart';
 
 class TaskListView extends StatelessWidget {
   const TaskListView({super.key});
@@ -15,21 +14,17 @@ class TaskListView extends StatelessWidget {
           decoration: BoxDecoration(
               color: Color.fromARGB(255, 244, 230, 31),
               borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
-              
-
               boxShadow: [
-                        BoxShadow(
-                          color: Color.fromARGB(255, 52, 52, 52),
-                      offset: const Offset(
-                        0.0,
-                        10.0,
-                      ),
-                      blurRadius: 0.0,
-                      spreadRadius: 0.0,
-                        )
-                      ]
-              
-              ),
+                BoxShadow(
+                  color: Color.fromARGB(255, 52, 52, 52),
+                  offset: const Offset(
+                    0.0,
+                    10.0,
+                  ),
+                  blurRadius: 0.0,
+                  spreadRadius: 0.0,
+                )
+              ]),
           child: ListView.separated(
             padding: EdgeInsets.all(15),
             separatorBuilder: (context, index) {
@@ -47,23 +42,22 @@ class TaskListView extends StatelessWidget {
                   margin: EdgeInsets.symmetric(horizontal: 5),
                   decoration: BoxDecoration(
                       color: Colors.red.shade300,
-                      borderRadius: BorderRadius.circular(10)
-                      ),
+                      borderRadius: BorderRadius.circular(10)),
                   child: Center(
                       child: Icon(Icons.delete, color: Colors.red.shade700)),
                 ),
                 child: Container(
                   //tasks
                   decoration: BoxDecoration(
-                     boxShadow: [
+                      boxShadow: [
                         BoxShadow(
                           color: Color.fromARGB(255, 91, 84, 84),
-                      offset: const Offset(
-                        0.0,
-                        3.0,
-                      ),
-                      blurRadius: 5.0,
-                      spreadRadius: 0.0,
+                          offset: const Offset(
+                            0.0,
+                            3.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.0,
                         )
                       ],
                       color: viewModel.clrLvl1,

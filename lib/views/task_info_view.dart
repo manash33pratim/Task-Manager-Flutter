@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:provider/provider.dart';
-import 'package:todo_list/view_models/app_view_model.dart';
+import 'package:task_manager_list/view_models/app_view_model.dart';
 
 class TaskInfoView extends StatelessWidget {
   const TaskInfoView({super.key});
@@ -24,16 +23,14 @@ class TaskInfoView extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           color: Color.fromARGB(255, 91, 84, 84),
-                      offset: const Offset(
-                        0.0,
-                        3.0,
-                      ),
-                      blurRadius: 5.0,
-                      spreadRadius: 0.0,
+                          offset: const Offset(
+                            0.0,
+                            3.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.0,
                         )
-                      ]
-                      
-                      ),
+                      ]),
                   child: Column(
                     children: [
                       Expanded(
@@ -75,19 +72,14 @@ class TaskInfoView extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           color: Color.fromARGB(255, 91, 84, 84),
-                      offset: const Offset(
-                        0.0,
-                        3.0,
-                      ),
-                      blurRadius: 5.0,
-                      spreadRadius: 0.0,
+                          offset: const Offset(
+                            0.0,
+                            3.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.0,
                         )
-                      ]
-                      
-                      
-                      
-                      ),
-                      
+                      ]),
                   child: Column(
                     children: [
                       Expanded(
