@@ -12,7 +12,7 @@ class TaskListView extends StatelessWidget {
     return Consumer<AppViewModel>(builder: (context, viewModel, child) {
       return Container(
           decoration: BoxDecoration(
-              color: Color.fromARGB(255, 244, 230, 31),
+              color: Color.fromARGB(255, 245, 232, 58),
               borderRadius: BorderRadius.vertical(top: Radius.circular(30)),
               boxShadow: [
                 BoxShadow(

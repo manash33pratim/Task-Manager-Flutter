@@ -27,6 +27,11 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+        backgroundColor: Color.fromARGB(255, 244, 230, 31),
+        elevation: 0
+      ),
       body: SafeArea(
           child: Stack(
         children: [
@@ -35,8 +40,8 @@ class _SplashState extends State<Splash> {
             width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
-                Color.fromARGB(255, 224, 212, 45),
-                 Color.fromARGB(255, 207, 201, 108),
+                Color.fromARGB(255, 244, 230, 31),
+                 Color.fromARGB(255, 240, 236, 180),
               ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
             ),
             child: Image(image: AssetImage('assets/spashscreen.png')),
