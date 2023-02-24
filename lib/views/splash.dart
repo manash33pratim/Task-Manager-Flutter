@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:task_manager_list/views/login_page.dart';
+//import 'package:task_manager_list/views/login_page.dart';
+import 'package:task_manager_list/views/task_page.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -18,7 +19,9 @@ class _SplashState extends State<Splash> {
   _navigatetohome() async {
     await Future.delayed(Duration(milliseconds: 3500), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => LoginPage()));
+        context, MaterialPageRoute(builder: (context) => TaskPage()));
+        
+
   }
 
   @override
@@ -32,8 +35,8 @@ class _SplashState extends State<Splash> {
             width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [
-                Color.fromARGB(255, 244, 230, 31),
-                Colors.white,
+                Color.fromARGB(255, 224, 212, 45),
+                 Color.fromARGB(255, 207, 201, 108),
               ], begin: Alignment.topCenter, end: Alignment.bottomCenter),
             ),
             child: Image(image: AssetImage('assets/spashscreen.png')),
